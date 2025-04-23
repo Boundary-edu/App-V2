@@ -23,20 +23,18 @@ export default function Home() {
             <Main>
                 <ColWrapper className='items-start h-full justify-center gap-10'>
                     <TitleWrapper className=''>
-                        <Title>회원가입</Title>
+                        <Title>로그인</Title>
                         <SubTitle>자신의 정보를 입력해주세요.</SubTitle>
                     </TitleWrapper>
                     
                     <ColWrapper className='gap-10 w-full mb-24'>
-                        <InputText title='이름' />
-                        <InputText title='휴대폰 번호' />
                         <InputText title='이메일' />
-                        <InputText title='집 주소' />
+                        <InputText title='비밀번호' />
                     </ColWrapper>
                     
                     {/* Buttons */}
                     <ColWrapper className='w-[90%] max-w-92 gap-2 mx-auto'>
-                        <Button onClick={() => router.push('/signin')} isPrimary>
+                        <Button onClick={() => router.push('/child/home')} isPrimary>
                             로그인
                         </Button>
                     </ColWrapper>
