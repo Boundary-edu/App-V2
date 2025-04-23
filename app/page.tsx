@@ -1,23 +1,28 @@
+"use client"
+
 import Image from 'next/image';
 import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { ImageWrapper } from '@/components/Wrap/ImageWrapper';
 import { Button } from '@/components/Button';
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
+
+  const router = useRouter()
+
   return (
     <Layout>
       <Main>
         <ColWrapper className='items-center h-full justify-center gap-10'>
           {/* Image */}
-          <ImageWrapper width={64} height={64}>
+          <ImageWrapper>
             <Image
               src="/시작-아이.png"
-              alt="Main Illustration"
-              fill
-              className="object-contain"
-              priority
+              alt="시작 아이콘"
+              width={256} 
+              height={256}
             />
           </ImageWrapper>
           {/* Text */}
@@ -27,10 +32,10 @@ export default function Home() {
           </div>
           {/* Buttons */}
           <ColWrapper className='w-[90%] max-w-92 gap-2'>
-            <Button isPrimary>
+            <Button onClick={() => router.push('/signin')} isPrimary>
               로그인
             </Button>
-            <Button >
+            <Button onClick={() => router.push('/signup')} >
               회원가입
             </Button>
           </ColWrapper>
