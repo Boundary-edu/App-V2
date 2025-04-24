@@ -1,0 +1,17 @@
+export const ChatBubble = ({ text, isPrimary }: { text:string, isPrimary?: boolean }) => {
+    return (
+      <div
+        className={
+          `py-3 font-semibold rounded-4xl px-4
+            ${isPrimary ?
+                "bg-blue-500 text-white text-right ml-auto rounded-br-sm" :
+                "bg-white text-black mr-auto rounded-bl-sm"
+            }
+          `
+        }
+      >
+        {text}
+      </div>
+    )
+  };
+  

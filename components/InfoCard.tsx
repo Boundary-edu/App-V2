@@ -5,7 +5,7 @@ export const InfoCard = ({ src, title, subtitle }: { src: string, title: string,
     return (
       <RowWrapper 
         className={
-          `gap-10 items-center bg-white p-4 rounded-2xl hover:bg-gray-100`
+          `gap-6 items-center bg-white p-4 rounded-2xl hover:bg-gray-100 hover:cursor-pointer`
         }
       >
         <img src={`${src}`} alt="" height={64} width={64}/>
