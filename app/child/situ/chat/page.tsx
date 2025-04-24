@@ -33,7 +33,7 @@ export default function Home() {
                     </ColWrapper>
                     <ColWrapper className='w-full gap-4 mt-auto'>
                         <RowWrapper className='w-full gap-4'>
-                            <Button isPrimary onClick={() => router.push('situ/feedback')}>그만하기</Button>
+                            <Button isPrimary onClick={() => router.push('feedback')}>그만하기</Button>
                             <Button onClick={() => console.log("hello world")}>계속하기</Button>
                         </RowWrapper>
                         <ChatInput className='' src={'/send.svg'}/>
