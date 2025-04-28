@@ -32,9 +32,9 @@ export default function Home() {
                     </RowWrapper>
                     
                     <ColWrapper className='gap-6 w-full'>
-                        <InfoCard src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
-                        <InfoCard src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
-                        <InfoCard src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
+                        <InfoCard onClick={() => router.push('')} src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
+                        <InfoCard onClick={() => router.push('')} src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
+                        <InfoCard onClick={() => router.push('')} src='/시작-아이.png' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UPUP'/>
                     </ColWrapper>
                 </ColWrapper>
             </Main>

@@ -1,6 +1,6 @@
-export function RowWrapper({ children, className = "" }: { children: React.ReactNode, className: string }) {
+export function RowWrapper({ children, className = "", onClick }: { children: React.ReactNode, className: string, onClick?: React.FunctionComponent }) {
     return (
-        <div className={`flex flex-row ${className}`}>
+        <div onClick={onClick} className={`flex flex-row ${className}`}>
             {children}
         </div>
     );
