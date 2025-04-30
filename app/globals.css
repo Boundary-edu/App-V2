@@ -29,3 +29,25 @@ body {
 *:focus {
   outline: none;
 }
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #E5E7EB; /* bg-gray-200 */
+  border-radius: 1rem;       /* rounded-xl */
+}
+
+/* 채워진 바 (WebKit) */
+progress::-webkit-progress-value {
+  background-color: #3B82F6; /* accent-blue-500 */
+  border-radius: 1rem;
+}
+
+/* 채워진 바 (Firefox) */
+progress::-moz-progress-bar {
+  background-color: #3B82F6;
+  border-radius: 1rem;
+}
