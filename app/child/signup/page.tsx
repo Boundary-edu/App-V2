@@ -28,10 +28,10 @@ export default function Home() {
                     </TitleWrapper>
                     
                     <ColWrapper className='gap-10 w-full mb-24'>
-                        <InputText title='이름' />
-                        <InputText title='휴대폰 번호' />
-                        <InputText title='이메일' />
-                        <InputText title='집 주소' />
+                        <InputText title='이름' placeholder="바운더"/>
+                        <InputText title='휴대폰 번호' placeholder="01012345678"/>
+                        <InputText title='이메일' placeholder="a12345678@gmail.com"/>
+                        <InputText title='집 주소' placeholder="부산광역시 강서구 가락대로 1378"/>
                     </ColWrapper>
                     
                     {/* Buttons */}

@@ -2,7 +2,7 @@ export const Figure = ({ children }: { children: React.ReactNode }) => {
     return (
       <div 
         className={
-          `text-xl text-black`
+          `text-lg text-black`
         }
       >
         {children}
