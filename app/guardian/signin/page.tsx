@@ -1,17 +1,13 @@
 "use client"
 
-import Image from 'next/image';
 import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
-import { ImageWrapper } from '@/components/Wrap/ImageWrapper';
 import { Button } from '@/components/Button';
 import { useRouter } from 'next/navigation'
-import { RowWrapper } from '@/components/Wrap/RowWrapper';
 import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
-import { Figure } from '@/components/Figure'
 import { InputText } from '@/components/InputText';
 
 export default function Home() {

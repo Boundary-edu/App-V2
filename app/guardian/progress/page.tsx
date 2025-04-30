@@ -7,8 +7,6 @@ import { useRouter } from 'next/navigation'
 import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
-import { InfoCard } from '@/components/InfoCard';
-import { RowWrapper } from '@/components/Wrap/RowWrapper';
 import { ProgressBar } from '@/components/ProgressBar';
 import { Calendar } from '@/components/Calender';
 

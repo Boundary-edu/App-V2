@@ -7,10 +7,7 @@ import { useRouter } from 'next/navigation'
 import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
-import { ChatBubble } from '@/components/ChatBubble';
 import { Button } from '@/components/Button';
-import { RowWrapper } from '@/components/Wrap/RowWrapper';
-import { ChatInput } from '@/components/ChatInput';
 import { FeedbackBox } from '@/components/FeedbackBox';
 import { Tip } from '@/components/Tip';
 import { PageNav } from '@/components/PageNav';
