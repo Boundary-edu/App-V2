@@ -42,7 +42,7 @@ progress::-webkit-progress-bar {
 
 /* 채워진 바 (WebKit) */
 progress::-webkit-progress-value {
-  background-color: #3B82F6; /* accent-blue-500 */
+  background-color: #3B82F6; /* accent-[#3182F7] */
   border-radius: 1rem;
 }
 

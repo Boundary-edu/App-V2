@@ -1,6 +1,6 @@
 export const SubTitle = ({ children }: { children: React.ReactNode }) => {
     return (
-      <div className="text-black">
+      <div className="text-gray-400 m-1">
         {children}
       </div>
     );

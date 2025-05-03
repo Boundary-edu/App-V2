@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>계정 선택 페이지 와이어프레임</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Step Indicator -->
+  <div class="flex items-center mb-6">
+    <div class="flex-1 h-2 bg-gray-300 rounded-full"></div>
+    <div class="w-8 h-2 bg-blue-500 rounded-full mx-2"></div>
+    <div class="flex-1 h-2 bg-gray-300 rounded-full"></div>
+  </div>
+
+  <!-- Title -->
+  <h1 class="text-2xl font-bold mb-6">계정 유형 선택</h1>
+
+  <!-- Selection Cards -->
+  <div class="grid grid-cols-2 gap-4">
+    <button class="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow hover:ring-4 ring-blue-200 focus:outline-none" aria-label="사용자 선택">
+      <!-- 사용자 아이콘 -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.68 0 5.17.747 7.245 2.038M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      <span class="text-lg font-medium">나(사용자)로 시작</span>
+    </button>
+
+    <button class="flex flex-col items-center justify-center bg-white p-6 rounded-2xl shadow hover:ring-4 ring-green-200 focus:outline-none" aria-label="보호자 선택">
+      <!-- 보호자 아이콘 -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-3-3h-4m-4 0H4a3 3 0 00-3 3v2h5m4-10a4 4 0 110-8 4 4 0 010 8zm6 4a4 4 0 10-8 0 4 4 0 008 0z" />
+      </svg>
+      <span class="text-lg font-medium">보호자 계정 만들기</span>
+    </button>
+  </div>
+</body>
+</html>

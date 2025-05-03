@@ -13,6 +13,7 @@ import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { Figure } from '@/components/Figure'
+import { Header } from '@/components/Header'
 
 export default function Home() {
   const [selected, setSelected] = useState<'child' | 'guardian' | null>(null)
@@ -29,18 +30,22 @@ export default function Home() {
   return (
     <Layout>
       <Main>
-        <ColWrapper className='items-start h-full justify-center gap-10'>
+        <ColWrapper className='items-start h-full justify-between gap-10'>
           <TitleWrapper className=''>
-            <Title>회원가입</Title>
-            <SubTitle>아이와 부모님을 선택해주세요.</SubTitle>
+            <Header/>
+            <Title className='text-2xl text-black font-semibold mt-10'>
+              계정 유형을
+              <br/>
+              선택해주세요
+            </Title>
           </TitleWrapper>
 
           {/* Image 선택지 */}
           <RowWrapper className='w-full justify-around mb-24'>
             {/** 아이 선택 카드 */}
             <ColWrapper
-              className={`items-center p-4 border-4 rounded-lg cursor-pointer transition-colors \
-                ${selected === 'child' ? 'border-blue-500' : 'border-transparent'}`}
+              className={`items-center p-4 border-2 rounded-3xl cursor-pointer transition-colors bg-white\
+                ${selected === 'child' ? 'border-[#3182F7]' : 'border-[#ddd]'}`}
             >
               <Image
                 src="/child.png"
@@ -54,8 +59,8 @@ export default function Home() {
 
             {/** 부모 선택 카드 */}
             <ColWrapper
-              className={`items-center p-4 border-4 rounded-lg cursor-pointer transition-colors \
-                ${selected === 'guardian' ? 'border-blue-500' : 'border-transparent'}`}
+              className={`items-center p-4 border-2 rounded-3xl cursor-pointer transition-colors bg-white \
+                ${selected === 'guardian' ? 'border-[#3182F7]' : 'border-[#ddd]'}`}
             >
               <Image
                 src="/guardian.png"

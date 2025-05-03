@@ -24,7 +24,7 @@ export default function Home() {
                     </TitleWrapper>
 
                     <ColWrapper className='items-start w-full h-full justify-center gap-4'>
-                        <Title><span className='text-blue-500'>신희성</span> 님의 레벨 <span className='text-blue-500'>46</span></Title>
+                        <Title><span className='text-[#3182F7]'>신희성</span> 님의 레벨 <span className='text-[#3182F7]'>46</span></Title>
                         <ProgressBar value={50} max={100}></ProgressBar>
                     </ColWrapper>
                     <Calendar></Calendar>

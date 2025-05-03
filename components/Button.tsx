@@ -4,10 +4,10 @@ export const Button = ({ children, isPrimary, onClick }: { children: React.React
       onClick={onClick}
       className={
         `${isPrimary ?
-          "bg-blue-500   hover:bg-blue-400 text-white" :
-          "bg-white text-blue-500 border-2 border-blue-500  hover:bg-blue-100"
+          "bg-[#3182F7]   hover:bg-[#3182F7] text-white" :
+          "bg-white text-[#3182F7] border-2 border-[#3182F7]  hover:bg-blue-100"
         }
-        w-full py-3 font-semibold rounded-xl hover:cursor-pointer`
+        w-full py-3 font-semibold rounded-2xl hover:cursor-pointer text-lg`
       }
     >
       {children}

@@ -6,7 +6,7 @@ export const InputText = ({ title, placeholder }: { title: string, placeholder:s
       <ColWrapper className='w-[60%]'>
         <div className="text-black">{title}</div>
         <input 
-            className="text-xl border-b-2 border-blue-500 text-black"            
+            className="text-xl border-b-2 border-[#3182F7] text-black"            
             type="text" 
             placeholder={placeholder}
         />

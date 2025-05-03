@@ -21,7 +21,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ value, max }) => {
       <progress
         value={value}
         max={max}
-        className="w-full h-4 bg-gray-200 rounded-xl accent-blue-500"
+        className="w-full h-4 bg-gray-200 rounded-xl accent-[#3182F7]"
       />
     </div>
   )

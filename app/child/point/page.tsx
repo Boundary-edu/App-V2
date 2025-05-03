@@ -25,7 +25,7 @@ export default function Home() {
                         <ColWrapper className='items-center'>
                             <Image src="/result.webp" alt='none' width="330" height="200"/>
                             <Title>저금통에</Title>
-                            <Title><span className='text-blue-500'>80 포인트</span>가 추가되었어요</Title>
+                            <Title><span className='text-[#3182F7]'>80 포인트</span>가 추가되었어요</Title>
                         </ColWrapper>
                         <ColWrapper className='items-center w-full gap-2'>
                             <SubTitle>성공적으로 학습을 마쳤어요!</SubTitle>
