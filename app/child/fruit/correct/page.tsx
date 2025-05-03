@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
+import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { Button } from '@/components/Button';
@@ -19,10 +19,10 @@ export default function Home() {
         <Layout>
             <Main>
                 <ColWrapper className='items-start h-full justify-start gap-8'>
-                    <TitleWrapper className=''>
+                    <ColWrapper className=''>
                         <Title>숨은 과일 찾기</Title>
                         <SubTitle>Q. 🍎개수는?</SubTitle>
-                    </TitleWrapper>
+                    </ColWrapper>
                     <RowWrapper className='w-full h-full flex items-center justify-center'>
                         <ColWrapper className='max-w-42 w-full h-full gap-5 flex items-center'>
                             <NumCard />

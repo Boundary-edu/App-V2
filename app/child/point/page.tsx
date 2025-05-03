@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
+import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { Button } from '@/components/Button';
@@ -17,10 +17,10 @@ export default function Home() {
         <Layout>
             <Main>
                 <ColWrapper className='items-start h-full justify-start'>
-                    <TitleWrapper className=''>
+                    <ColWrapper className=''>
                         <Title>포인트 제공</Title>
                         <SubTitle>게임을 성공적으로 완료했어요!</SubTitle>
-                    </TitleWrapper>
+                    </ColWrapper>
                     <ColWrapper className='w-full h-full justify-between items-center'>
                         <ColWrapper className='items-center'>
                             <Image src="/result.webp" alt='none' width="330" height="200"/>

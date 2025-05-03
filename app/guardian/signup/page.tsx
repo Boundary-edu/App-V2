@@ -5,10 +5,11 @@ import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { Button } from '@/components/Button';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { InputText } from '@/components/InputText';
+import { Header } from '@/components/Header';
+
 
 export default function Home() {
 
@@ -17,25 +18,22 @@ export default function Home() {
     return (
         <Layout>
             <Main>
-                <ColWrapper className='items-start h-full justify-center gap-10'>
-                    <TitleWrapper className=''>
-                        <Title>회원가입</Title>
-                        <SubTitle>자신의 정보를 입력해주세요.</SubTitle>
-                    </TitleWrapper>
-                    
-                    <ColWrapper className='gap-10 w-full mb-24'>
-                        <InputText title='이름' placeholder="바운더"/>
-                        <InputText title='휴대폰 번호' placeholder="01012345678"/>
-                        <InputText title='이메일' placeholder="a12345678@gmail.com"/>
-                        <InputText title='집 주소' placeholder="부산광역시 강서구 가락대로 1378"/>
+                <ColWrapper className='items-start h-full justify-between gap-10'>
+                    <ColWrapper className=''>
+                        <Header />
+                        <Title>
+                            이름을 알려주세요
+                        </Title>
+                        <InputText title='보호자 코드' placeholder="123456" />
+                        <InputText title='이름' placeholder="바운더" />
                     </ColWrapper>
-                    
+
+
+
                     {/* Buttons */}
-                    <ColWrapper className='w-[90%] max-w-92 gap-2 mx-auto'>
-                        <Button onClick={() => router.push('/signin')} isPrimary>
-                            로그인
-                        </Button>
-                    </ColWrapper>
+                    <Button onClick={() => router.push('/signin')} isPrimary>
+                        다음
+                    </Button>
                 </ColWrapper>
             </Main>
         </Layout>

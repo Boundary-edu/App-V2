@@ -1,6 +1,6 @@
-export const Title = ({ children, className }: { children: React.ReactNode, className: string }) => {
+export const Title = ({ children, className }: { children: React.ReactNode, className?: string }) => {
     return (
-      <div className={className}>
+      <div className='text-2xl text-black font-semibold mt-10'>
         {children}
       </div>
     );

@@ -9,7 +9,6 @@ import { ImageWrapper } from '@/components/Wrap/ImageWrapper';
 import { Button } from '@/components/Button';
 import { useRouter } from 'next/navigation'
 import { RowWrapper } from '@/components/Wrap/RowWrapper';
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { Figure } from '@/components/Figure'
@@ -31,14 +30,14 @@ export default function Home() {
     <Layout>
       <Main>
         <ColWrapper className='items-start h-full justify-between gap-10'>
-          <TitleWrapper className=''>
+          <ColWrapper>
             <Header/>
-            <Title className='text-2xl text-black font-semibold mt-10'>
+            <Title>
               계정 유형을
               <br/>
               선택해주세요
             </Title>
-          </TitleWrapper>
+          </ColWrapper>
 
           {/* Image 선택지 */}
           <RowWrapper className='w-full justify-around mb-24'>

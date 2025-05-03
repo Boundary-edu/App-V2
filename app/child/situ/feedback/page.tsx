@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
+import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { Button } from '@/components/Button';
@@ -20,10 +20,10 @@ export default function Home() {
         <Layout>
             <Main>
                 <ColWrapper className='items-start h-full justify-start gap-4'>
-                    <TitleWrapper className=''>
+                    <ColWrapper className=''>
                         <Title>학습 결과</Title>
                         <SubTitle>배운 결과를 함께 살펴봐요</SubTitle>
-                    </TitleWrapper>
+                    </ColWrapper>
                     <ColWrapper className='gap-8 mt-8'>
                         <FeedbackBox text='철수와 영희는 내 친구가 아니니까 인사를 해야 한다.' isPrimary/>
                         <FeedbackBox text='철수와 영희는 내 친구가 아니니까 인사를 해야 한다.'/>

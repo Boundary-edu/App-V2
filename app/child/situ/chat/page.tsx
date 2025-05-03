@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
+import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { ChatBubble } from '@/components/ChatBubble';
@@ -20,10 +20,10 @@ export default function Home() {
         <Layout>
             <Main>
                 <ColWrapper className='items-start h-full justify-start gap-4'>
-                    <TitleWrapper className=''>
+                    <ColWrapper className=''>
                         <Title>상황 대처 학습</Title>
                         <SubTitle>AI와 상황에 맞게 대화해보세요</SubTitle>
-                    </TitleWrapper>
+                    </ColWrapper>
                     
                     <ColWrapper className='gap-6 w-full'>
                         <ChatBubble text='나 몸이 아파서 학교 못가겠어' isPrimary/>

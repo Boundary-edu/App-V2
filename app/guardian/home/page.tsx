@@ -4,7 +4,7 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { TitleWrapper } from '@/components/Wrap/TitleWrapper'
+import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { InfoCard } from '@/components/InfoCard';
@@ -18,10 +18,10 @@ export default function Home() {
         <Layout>
             <Main>
                 <ColWrapper className='items-start h-full justify-center gap-10'>
-                    <TitleWrapper className=''>
+                    <ColWrapper className=''>
                         <Title>아이의 학습을 확인하세요</Title>
                         <SubTitle>아이의 학습 결과를 확인하며 도와주세요</SubTitle>
-                    </TitleWrapper>
+                    </ColWrapper>
 
                     <RowWrapper className='justify-between items-center gap-8'>
                         <img src="/시작-아이.png" alt="" width={128} height={128}/>
