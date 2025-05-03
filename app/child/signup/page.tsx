@@ -5,7 +5,6 @@ import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { Button } from '@/components/Button';
 import { useRouter } from 'next/navigation'
-import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { InputText } from '@/components/InputText';

@@ -2,7 +2,6 @@
 
 import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
-import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
 import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
