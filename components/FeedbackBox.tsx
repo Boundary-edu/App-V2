@@ -1,6 +1,6 @@
 export const FeedbackBox = ({isPrimary=false, text} : {isPrimary?:boolean, text:string}) => {
     return (
-        <div className="relative text-center bg-white px-8 py-12 text-black rounded-xl border-3 border-[#3182F7]">
+        <div className="relative text-center bg-white px-8 py-12 text-black rounded-xl">
             <div className={`
                 absolute top-[-16] left-4 rounded-3xl text-sm font-bold 
                 ${isPrimary ? 

@@ -73,14 +73,12 @@ export default function Home() {
           </RowWrapper>
 
           {/* 다음 버튼 */}
-          <ColWrapper className='w-[90%] max-w-92 gap-2 mx-auto'>
             <Button
               onClick={handleNext}
               isPrimary
             >
               다음
             </Button>
-          </ColWrapper>
         </ColWrapper>
       </Main>
     </Layout>

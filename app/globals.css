@@ -54,5 +54,4 @@ progress::-moz-progress-bar {
 
 input::placeholder {
   color: #ccc;
-  font-size: 1.2rem;
 }

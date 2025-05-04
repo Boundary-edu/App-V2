@@ -4,7 +4,6 @@ import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
 import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
-import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
 import { SubTitle } from '@/components/SubTItle';
 import { ChatBubble } from '@/components/ChatBubble';
@@ -17,10 +16,13 @@ export default function Home() {
     return (
         <Layout>
             <Main>
-                <ColWrapper className='items-start h-full justify-center gap-10'>
-                    <ColWrapper className=''>
-                        <Title>상황 대처 학습 예시</Title>
-                        <SubTitle>바운더리에서 상황 대처 학습을 진행해봐요.</SubTitle>
+                <ColWrapper className='items-start h-full justify-between gap-10'>
+                    <ColWrapper className='w-full items-center justify-center mt-20'>
+                        <Title className='text-2xl text-center'>
+                            AI와 상황에 맞게
+                            <br/>
+                            대화해요
+                        </Title>
                     </ColWrapper>
                     
                     <ColWrapper className='gap-6 w-full'>

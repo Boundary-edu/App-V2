@@ -23,7 +23,7 @@ export default function Home() {
             width={256}
             height={256}
           />
-          <Title className='text-black font-bold text-center text-4xl leading-12'>
+          <Title className='text-black font-bold text-center text-3xl leading-10'>
             어렵지 않은 학습
             <br />
             바운더리
