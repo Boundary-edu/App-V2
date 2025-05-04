@@ -28,7 +28,7 @@ export default function Home() {
             <br />
             바운더리
           </Title>
-          <Button onClick={() => router.push('/signup')} isPrimary>
+          <Button onClick={() => router.push('/choose')} isPrimary>
             시작하기
           </Button>
         </ColWrapper>

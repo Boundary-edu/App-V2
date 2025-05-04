@@ -1,6 +1,9 @@
-export function ColWrapper({ children, className = "" }: { children: React.ReactNode, className?: string }) {
+export function ColWrapper({ children, className = "", onClick }: { children: React.ReactNode, className?: string, onClick?:any }) {
     return (
-        <div className={`flex flex-col ${className}`}>
+        <div 
+            className={`flex flex-col ${className}`}
+            onClick={onClick}
+        >
             {children}
         </div>
     );

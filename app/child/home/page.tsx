@@ -2,12 +2,12 @@
 
 import { Layout } from '@/components/Layout';
 import { Main } from '@/components/Main';
-import { ColWrapper } from '@/components/Wrap/ColWrapper';
 import { useRouter } from 'next/navigation'
 import { ColWrapper } from '@/components/Wrap/ColWrapper'
 import { Title } from '@/components/Title';
-import { SubTitle } from '@/components/SubTItle';
 import { InfoCard } from '@/components/InfoCard';
+import { RowWrapper } from '@/components/Wrap/RowWrapper';
+import { Header } from '@/components/Header'
 
 export default function Home() {
 
@@ -16,17 +16,21 @@ export default function Home() {
     return (
         <Layout>
             <Main>
-                <ColWrapper className='items-start h-full justify-center gap-10'>
-                    <ColWrapper className=''>
-                        <Title>어렵지 않은 학습</Title>
-                        <SubTitle>상황 대처, 게임을 해봅시다</SubTitle>
+                <ColWrapper className='items-between h-full justify-between gap-10'>
+                    <ColWrapper className='w-full'>
+                        <Header/>
+                        <Title>오늘도 반가워요!</Title>
                     </ColWrapper>
                     
-                    <ColWrapper className='gap-6 w-full'>
-                        <InfoCard onClick={() => router.push('situ')} src='/ManWalking.svg' title='상황 대처 학습' subtitle='AI와 대화하며 학습력 UP'/>
-                        <InfoCard onClick={() => router.push('choose')} src='/ManWalking.svg' title='행동 선택 학습' subtitle='4지선다 문제로 질문에 맞는 답변 선택'/>
-                        <InfoCard onClick={() => router.push('card')} src='/Folder.svg' title='카드 뒤집기' subtitle='같은 카드를 찾으며 기억력 상승'/>
-                        <InfoCard onClick={() => router.push('fruit')} src='/Banana.svg' title='숨은 과일 찾기' subtitle='숨은 과일을 찾으며 기억력을 높여요.'/>
+                    <ColWrapper className='gap-3 w-full'>
+                        <RowWrapper className='gap-3 w-full'>
+                            <InfoCard isPrimary onClick={() => router.push('situ')} src='/thinking-face.svg' title='상황 대처 학습' subtitle='대화형'/>
+                            <InfoCard onClick={() => router.push('choose')} src='/thinking-face2.svg' title='행동 선택 학습' subtitle='선택형'/>
+                        </RowWrapper>
+                        <RowWrapper className='gap-3 w-full'>
+                            <InfoCard onClick={() => router.push('card')} src='/joker.svg' title='카드 뒤집기'/>
+                            <InfoCard isPrimary onClick={() => router.push('fruit')} src='/watermelon.svg' title='숨은 과일 찾기'/>
+                        </RowWrapper>
                     </ColWrapper>
                 </ColWrapper>
             </Main>
