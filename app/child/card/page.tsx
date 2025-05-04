@@ -1,43 +1,42 @@
-"use client"
+'use client'
 
-import { Layout } from '@/components/Layout';
-import { Main } from '@/components/Main';
-import { ColWrapper } from '@/components/Wrap/ColWrapper';
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { Layout } from '@/components/Layout'
+import { Main } from '@/components/Main'
 import { ColWrapper } from '@/components/Wrap/ColWrapper'
-import { Title } from '@/components/Title';
-import { SubTitle } from '@/components/SubTItle';
-import { RowWrapper } from '@/components/Wrap/RowWrapper';
-import { NumCard } from '@/components/NumCard'
-import CountdownTimer from '@/components/CountdownTimer';
+import { Title } from '@/components/Title'
 
 export default function Home() {
+  const router = useRouter()
+  const [count, setCount] = useState(3)
 
-    const router = useRouter()
+  useEffect(() => {
+    if (count === 0) {
+      // 카운트가 끝나면 이동할 경로
+      router.push('/child/card/play')
+      return
+    }
+    const timer = setTimeout(() => setCount(count - 1), 1000)
+    return () => clearTimeout(timer)
+  }, [count, router])
 
-    return (
-        <Layout>
-            <Main>
-                <ColWrapper className='items-start h-full justify-start gap-4'>
-                    <ColWrapper className=''>
-                        <Title>카드 뒤집기</Title>
-                        <SubTitle>카드를 뒤집어 보아요</SubTitle>
-                    </ColWrapper>
-                    <CountdownTimer className="w-full flex justify-center"/>
-                    <RowWrapper className='gap-8 w-full h-full flex items-center justify-center'>
-                        <ColWrapper className='max-w-42 w-full h-full gap-8 flex items-center'>
-                            <NumCard  isPrimary/>
-                            <NumCard />
-                            <NumCard isPrimary/>
-                        </ColWrapper>
-                        <ColWrapper className='max-w-42 w-full h-full gap-8 flex items-center'>
-                            <NumCard />
-                            <NumCard isPrimary/>
-                            <NumCard />
-                        </ColWrapper>
-                    </RowWrapper>
-                </ColWrapper>
-            </Main>
-        </Layout>
-    );
-}   
+  return (
+    <Layout>
+      <Main>
+        <ColWrapper className='items-start h-full justify-center gap-12'>
+          <Title className='text-center w-full'>
+            모든 카드의 짝을
+            <br />
+            맞춰주세요
+          </Title>
+
+          {/* 디자인 건드리지 않고 숫자만 count 상태값으로 */}
+          <div className='p-4 bg-[#3182F7] mx-auto w-14 h-14 flex justify-center items-center rounded-4xl text-2xl'>
+            {count}
+          </div>
+        </ColWrapper>
+      </Main>
+    </Layout>
+  )
+}

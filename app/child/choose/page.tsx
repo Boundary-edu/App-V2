@@ -20,26 +20,20 @@ export default function Home() {
                 <ColWrapper className='items-start h-full justify-between gap-10'>
                     <ColWrapper className='w-full items-center justify-center mt-20'>
                         <Title className='text-2xl text-center'>
-                            AI와 상황에 맞게
-                            <br/>
-                            대화해요
+                            상황에 맞게 정답을
+                            <br />
+                            선택해요
                         </Title>
                     </ColWrapper>
                     
-                    {/* <ColWrapper className='gap-6 w-full'>
-                        <ChatBubble text='나 몸이 아파서 학교 못가겠어' isPrimary/>
-                        <ChatBubble text='나 몸이 아파서 학교 못가겠어' />
-                        <ChatBubble text='나 몸이 아파서 학교 못가겠어' isPrimary/>
-                        <ChatBubble text='나 몸이 아파서 학교 못가겠어' />
-                    </ColWrapper> */}
                     <ColWrapper className='gap-6 w-full bg-white py-2 rounded-2xl mb-12'>
-                        <Image src={'/example1.png'} alt='' height={400} width={400}></Image>
+                        <Image src={'/example2.png'} alt='' height={400} width={400}></Image>
                         {/* <ChatBubble text='나 몸이 아파서 학교 못가겠어' isPrimary/>
                         <ChatBubble text='나 몸이 아파서 학교 못가겠어' />
                         <ChatBubble text='나 몸이 아파서 학교 못가겠어' isPrimary/>
                         <ChatBubble text='나 몸이 아파서 학교 못가겠어' /> */}
                     </ColWrapper>
-                    <Button isPrimary onClick={() => router.push('situ/chat')}>다음으로</Button>
+                    <Button isPrimary onClick={() => router.push('choose/chat')}>다음으로</Button>
                 </ColWrapper>
             </Main>
         </Layout>

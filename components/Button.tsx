@@ -5,9 +5,9 @@ export const Button = ({ children, isPrimary, onClick }: { children: React.React
       className={
         `${isPrimary ?
           "bg-[#3182F7]   hover:bg-[#3182F7] text-white" :
-          "bg-white text-[#3182F7] border-2 border-[#3182F7]  hover:bg-blue-100"
+          "bg-white  hover:bg-blue-100 text-black"
         }
-        w-full py-3 font-semibold rounded-2xl hover:cursor-pointer text-lg
+        w-full py-3 font-medium rounded-2xl hover:cursor-pointer text-lg 
         `
       }
     >

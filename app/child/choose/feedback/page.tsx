@@ -22,22 +22,16 @@ export default function Home() {
                 <ColWrapper className='items-start h-full justify-between'>
                     <ColWrapper className='w-full items-center justify-center'>
                         <CategoryTabs />
-                        <Title className='text-2xl text-center mt-16 mb-16'>
-                            상대를 공감해야해요
-                        </Title>
+
                     </ColWrapper>
-
-                    <div className='bg-white w-full h-full mb-12 rounded-2xl px-8 py-2 text-lg text-black leading-16'>
-                        ❌ 아파서 학교 못가겠어  
-                        <br />
-                        ❌ 너가 핀트를 잘못잡았어  
-                        <br />
-                        ❌ 이건 이렇게 하면 안 되는 말이야
-                    </div>
-
-                    <ColWrapper className='w-full gap-4 mt-8'>
-                        <div className='text-center font-light text-sm text-black'>틀린 표현을 아는 것만으로도 큰 걸음이에요!</div>
-                        <Button onClick={() => router.push('/child/profit')} isPrimary>다음으로</Button>
+                    <Title className='text-2xl text-center w-full'>
+                            상대를 공감해야해요
+                    </Title>
+                    <ColWrapper className='gap-8 mt-8'>
+                        <FeedbackBox text='철수와 영희는 내 친구가 아니니까 인사를 해야 한다.' isPrimary />
+                        <FeedbackBox text='철수와 영희는 내 친구가 아니니까 인사를 해야 한다.' />
+                        <Tip text="친구가 아니라도 인사하는 것은 예의예요" />
+                        <Button onClick={() => router.push('/child/profit')} isPrimary>완료하기</Button>
                     </ColWrapper>
                 </ColWrapper>
             </Main>
