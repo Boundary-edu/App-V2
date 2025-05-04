@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Button } from '@/components/Button';
+import { Select } from '@/components/Select';
 
 interface SelectableButtonGroupProps {
   /** 버튼에 들어갈 텍스트 리스트 */
@@ -24,7 +24,7 @@ export const SelectableButtonGroup: React.FC<SelectableButtonGroupProps> = ({
   return (
     <div className="w-full flex flex-col gap-4">
       {labels.map((label, idx) => (
-        <Button
+        <Select
           key={idx}
           /** 선택된 인덱스에만 Primary 스타일 적용 */
           isPrimary={selectedIndex === idx}
@@ -32,7 +32,7 @@ export const SelectableButtonGroup: React.FC<SelectableButtonGroupProps> = ({
           onClick={() => handleClick(idx)}
         >
           {label}
-        </Button>
+        </Select>
       ))}
     </div>
   );
