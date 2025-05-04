@@ -29,7 +29,7 @@ export default function FruitCountGame() {
         {
           id: Date.now(),
           xPct: Math.random() * 90,
-          yPct: Math.random() * 80,
+          yPct: Math.random() * 80, 
         },
       ])
     }, 1000)
